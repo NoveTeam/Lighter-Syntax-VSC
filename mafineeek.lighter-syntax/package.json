@@ -1,0 +1,25 @@
+{
+    "name": "lighter-syntax",
+    "displayName": "Lighter-Syntax",
+    "description": "Adds support for lighter's syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lighter",
+            "aliases": ["Lighter", "lighter"],
+            "extensions": [".lighter",".lgt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lighter",
+            "scopeName": "lighter.lighter",
+            "path": "./syntaxes/lighter.tmLanguage.json"
+        }]
+    }
+}
